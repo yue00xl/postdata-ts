@@ -7,13 +7,16 @@
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"lint-staged"
-    }
+  // "husky":{
+  //   "hooks":{
+  //     "pre-commit":"lint-staged"
+  //   }
+  // },
+  "gitHooks":{
+    "pre-commit": "lint-staged"
   },
   "lint-staged":{
-    "*./src/*.{js,ts,json,css,less,scss,md}":[
+    "*.{ts,js}":[
       "prettier --trailing-comma es5 --single-quote --writeprettier --write",
       "eslint --cache --fix",
       "git add"

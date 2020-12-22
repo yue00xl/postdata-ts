@@ -1,8 +1,6 @@
 
 
 
-var num = function(){
-    let params = {
-        test:param
-    }
-},
+function num(a: number):number{
+    console.log(111)
+}
