@@ -3,7 +3,11 @@
 
 var num = function(){
     let params = {
-        test:text
+        test:textd
     }
 },
+
+
+
+
 

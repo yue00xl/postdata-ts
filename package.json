@@ -15,7 +15,9 @@
   "lint-staged":{
     "*./src/**/*.{js,ts,json,css,less,scss,md}":[
       "prettier --write",
-      "yarn lint"
+      "yarn lint",
+      "git add",
+      "eslint --cache --fix"
     ]
   },
   "author": "",
