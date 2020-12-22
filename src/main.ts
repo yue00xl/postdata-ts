@@ -2,5 +2,5 @@
 
 
 function num(a: number):number{
-    console.log(111)
+    console.log(111),
 }
