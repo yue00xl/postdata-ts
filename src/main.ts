@@ -2,5 +2,7 @@
 
 
 var num = function(){
-    console.log(1111)
+    let params = {
+        test:text
+    }
 },
