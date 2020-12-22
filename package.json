@@ -13,11 +13,10 @@
     }
   },
   "lint-staged":{
-    "*./src/**/*.{js,ts,json,css,less,scss,md}":[
-      "prettier --write",
-      "yarn lint",
-      "git add",
-      "eslint --cache --fix"
+    "*./src/*.{js,ts,json,css,less,scss,md}":[
+      "prettier --trailing-comma es5 --single-quote --writeprettier --write",
+      "eslint --cache --fix",
+      "git add"
     ]
   },
   "author": "",
